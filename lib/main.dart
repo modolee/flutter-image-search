@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:image_search/data/photo_provider.dart';
 import 'package:image_search/ui/home_screen.dart';
+
+import 'data/api.dart';
 
 void main() => runApp(const App());
 
@@ -10,7 +13,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Image search',
-      home: const HomeScreen(),
+      home: PhotoProvider(
+        api: PixabayApi(),
+        child: const HomeScreen(),
+      ),
     );
   }
 }
