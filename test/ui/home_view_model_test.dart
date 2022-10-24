@@ -16,7 +16,6 @@ void main() {
           equals([]),
           equals(fakeJson.map((e) => Photo.fromJson(e)).toList()),
           equals(fakeJson.map((e) => Photo.fromJson(e)).toList()),
-          equals(fakeJson.map((e) => Photo.fromJson(e)).toList()),
         ]));
   });
 }
