@@ -13,7 +13,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Image search',
-      home: Provider(
+      home: ChangeNotifierProvider(
         create: (context) => HomeViewModel(PixabayApi()),
         child: const HomeScreen(),
       ),
