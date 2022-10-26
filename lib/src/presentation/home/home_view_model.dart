@@ -1,10 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:image_search/data/data_source/result.dart';
-import 'package:image_search/domain/repository/photo_api_repository.dart';
-import 'package:image_search/domain/model/photo.dart';
-import 'package:image_search/presentation/home/home_state.dart';
-import 'package:image_search/presentation/home/home_ui_event.dart';
+import 'package:image_search/src/data/data_source/result.dart';
+import 'package:image_search/src/domain/repository/photo_api_repository.dart';
+import 'package:image_search/src/domain/model/photo.dart';
+import 'package:image_search/src/presentation/home/home_state.dart';
+import 'package:image_search/src/presentation/home/home_ui_event.dart';
 
 class HomeViewModel with ChangeNotifier {
   final PhotoApiRepository repository;

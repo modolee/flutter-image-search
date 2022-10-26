@@ -1,7 +1,7 @@
-import 'package:image_search/data/data_source/pixabay_api.dart';
-import 'package:image_search/data/data_source/result.dart';
-import 'package:image_search/domain/repository/photo_api_repository.dart';
-import 'package:image_search/domain/model/photo.dart';
+import 'package:image_search/src/data/data_source/pixabay_api.dart';
+import 'package:image_search/src/data/data_source/result.dart';
+import 'package:image_search/src/domain/repository/photo_api_repository.dart';
+import 'package:image_search/src/domain/model/photo.dart';
 
 class PhotoApiRepositoryPixabay implements PhotoApiRepository {
   PixabayApi api;

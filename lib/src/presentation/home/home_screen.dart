@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:image_search/presentation/home/home_view_model.dart';
-import 'package:image_search/presentation/home/widgets/photo_widget.dart';
+import 'package:image_search/src/presentation/home/home_view_model.dart';
+import 'package:image_search/src/presentation/home/widgets/photo_widget.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {

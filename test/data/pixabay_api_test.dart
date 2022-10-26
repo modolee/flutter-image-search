@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
-import 'package:image_search/data/data_source/pixabay_api.dart';
-import 'package:image_search/data/data_source/result.dart';
-import 'package:image_search/data/repository/photo_api_repository_pixabay.dart';
-import 'package:image_search/domain/model/photo.dart';
+import 'package:image_search/src/data/data_source/pixabay_api.dart';
+import 'package:image_search/src/data/data_source/result.dart';
+import 'package:image_search/src/data/repository/photo_api_repository_pixabay.dart';
+import 'package:image_search/src/domain/model/photo.dart';
 
 void main() {
   test('Pixabay 데이터를 잘 가져와야 한다.', () async {
