@@ -1,12 +1,17 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:image_search/src/data/data_source/result.dart';
-import 'package:image_search/src/domain/repository/photo_api_repository.dart';
-import 'package:image_search/src/domain/model/photo.dart';
+import 'package:image_search/src/data/data_sources/result.dart';
+import 'package:image_search/src/domain/repositories/photo_api_repository.dart';
+import 'package:image_search/src/domain/models/photo.dart';
+import 'package:image_search/src/domain/use_cases/get_photos_usecase.dart';
 import 'package:image_search/src/presentation/home/home_view_model.dart';
 
 void main() {
   test('Stream이 잘 동작해야 한다.', () async {
-    final viewModel = HomeViewModel(FakePhotoApiRepository());
+    final viewModel = HomeViewModel(
+      getPhotosUseCase: GetPhotosUseCase(
+        repository: FakePhotoApiRepository(),
+      ),
+    );
 
     await viewModel.fetch('apple');
 

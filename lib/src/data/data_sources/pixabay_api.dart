@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:image_search/src/data/data_source/result.dart';
+import 'package:image_search/src/data/data_sources/result.dart';
 
 class PixabayApi {
   static const baseUrl = 'https://pixabay.com/api/';
